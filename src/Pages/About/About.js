@@ -1,5 +1,6 @@
 import React from "react";
 import mypic from "../../assets/images/my pic.jpeg";
+import resume from "../../assets/files/Abir Resume MERN Dev candidate.pdf";
 const About = () => {
   return (
     <div className="flex h-screen" id="About">
@@ -10,8 +11,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-3/5 flex justify-center items-center">
-        <div className="mx-7 font-semibold">
+      <div className="w-3/5 flex justify-center items-center bg-base-100">
+        <div className="px-7">
           <p className="text-3xl mb-3 font-bold text-primary text-center">
             About Myself
           </p>
@@ -36,6 +37,11 @@ const About = () => {
             best at it since I have experienced this issue many times and
             battled it back.
           </p>
+        <div className='mt-5'>
+          <a href={resume} download="Abir_Resume" class="btn btn-secondary">
+            Download Resume
+          </a>
+        </div>
         </div>
       </div>
     </div>

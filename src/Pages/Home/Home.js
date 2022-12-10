@@ -1,12 +1,17 @@
 import React from "react";
+import {
+  FaFacebookSquare,
+  FaGithub,
+  FaGithubSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import resume from "../../assets/files/Abir Resume MERN Dev candidate.pdf"
-
+import resume from "../../assets/files/Abir Resume MERN Dev candidate.pdf";
 
 const Home = () => {
   return (
     <div id="home" className="h-screen">
-      <div className="h-full flex items-center justify-center">
+      <div className="h-full flex flex-col items-center justify-center">
         <div>
           <p className="text-center">Hello, My Name is</p>
           <TypeAnimation
@@ -31,16 +36,38 @@ const Home = () => {
           <p className="font-bold text-3xl text-center">
             MERN Stack Developer || ReactJS, NodeJs || Frontend Developer
           </p>
-          <h4 className="lg:text-xl text-xs text-center my-5">
-            <p>
-              I build interactive websites than run across platforms & devices
+          
+            <p className="lg:text-xl text-xs text-center mx-5 my-5">
+              “Success is peace of mind, which is a direct result of
+              self-satisfaction in knowing you made the effort to become the
+              best of which you are capable.” —John Wooden
             </p>
-          </h4>
-          <div className="text-center">
-            <a href={resume} download="Abir_Resume" class="btn btn-primary">
-              Resume
-            </a>
-          </div>
+          
+        </div>
+        <div className="flex">
+          <ul className="flex">
+            <li className="p-2">
+              <a
+                className="text-4xl"
+                href="https://www.linkedin.com/in/strikerabir/"
+              >
+                <FaLinkedin></FaLinkedin>
+              </a>
+            </li>
+            <li className="p-2">
+              <a className="text-4xl" href="https://github.com/StrikerAbir">
+                <FaGithubSquare></FaGithubSquare>
+              </a>
+            </li>
+            <li className="p-2">
+              <a
+                className="text-4xl"
+                href="https://www.facebook.com/strikerton.63"
+              >
+                <FaFacebookSquare></FaFacebookSquare>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

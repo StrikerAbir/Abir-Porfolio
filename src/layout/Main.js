@@ -4,6 +4,7 @@ import Home from '../Pages/Home/Home';
 import Nav from '../Shared/Nav/Nav';
 import SideNav from '../Shared/SideNav/SideNav';
 import bg from "../assets/images/bg.jpeg";
+import Skills from '../Pages/Skills/Skills';
 const Main = () => {
     const [dark, setDark] = useState(false);
     return (
@@ -24,7 +25,8 @@ const Main = () => {
             </div>
             <div className="absolute top-0 bg-base-100 bg-opacity-60 w-full">
               <Home></Home>
-              <About></About>
+                        <About></About>
+                        <Skills></Skills>
             </div>
           </div>
         </div>
