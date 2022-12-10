@@ -5,9 +5,9 @@ import resume from "../../assets/files/Abir Resume MERN Dev candidate.pdf"
 
 const Home = () => {
   return (
-    <div className="h-screen">
-      <div className="">
-        <div className="h-full flex flex-col justify-center">
+    <div id="home" className="h-screen">
+      <div className="h-full flex items-center justify-center">
+        <div>
           <p className="text-center">Hello, My Name is</p>
           <TypeAnimation
             sequence={[
@@ -29,7 +29,7 @@ const Home = () => {
             Md Abir Hasan
           </h1> */}
           <p className="font-bold text-3xl text-center">
-            I'm a MERN Stack Developer
+            MERN Stack Developer || ReactJS, NodeJs || Frontend Developer
           </p>
           <h4 className="lg:text-xl text-xs text-center my-5">
             <p>

@@ -12,7 +12,7 @@ const Main = () => {
         <div className="flex relative">
           <div className="w-1/5">
             <div className="fixed top-0">
-              <div className="border-0 border-r-4 border-primary">
+              <div className="border-0 border-r-4 border-primary h-screen">
                 <SideNav setDark={setDark} dark={dark}></SideNav>
               </div>
             </div>
@@ -22,7 +22,7 @@ const Main = () => {
             <div className="fixed">
               <img className="w-full" src={bg} alt="" />
             </div>
-            <div className="absolute top-0 bg-base-100 bg-opacity-70 ">
+            <div className="absolute top-0 bg-base-100 bg-opacity-70 w-full">
               <Home></Home>
               <About></About>
             </div>
