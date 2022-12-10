@@ -2,8 +2,8 @@ import React from 'react';
 import tMark from '../../assets/images/Tmark.gif'
 const SideNav = ({ dark, setDark }) => {
     return (
-        <div className=''>
-            <img src={tMark} alt="" />
+        <div >
+            <img className='w-full' src={tMark} alt="" />
             <ul>
                 <li>
                     Home
