@@ -22,7 +22,7 @@ const Main = () => {
             <div className="fixed">
               <img className="w-full" src={bg} alt="" />
             </div>
-            <div className="absolute top-0 bg-base-100 bg-opacity-70 w-full">
+            <div className="absolute top-0 bg-base-100 bg-opacity-60 w-full">
               <Home></Home>
               <About></About>
             </div>

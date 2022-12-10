@@ -2,8 +2,8 @@ import React from "react";
 import mypic from "../../assets/images/my pic.jpeg";
 const About = () => {
   return (
-    <div className="flex">
-      <div className="w-2/5">
+    <div className="flex h-screen" id="About">
+      <div className="w-2/5 flex justify-center items-center">
         <div className="avatar mx-4">
           <div className="rounded-full">
             <img className="w-full rounded-full" src={mypic} alt="" />
@@ -36,7 +36,6 @@ const About = () => {
             best at it since I have experienced this issue many times and
             battled it back.
           </p>
-
         </div>
       </div>
     </div>
