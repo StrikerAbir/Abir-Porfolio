@@ -6,6 +6,7 @@ import SideNav from "../Shared/SideNav/SideNav";
 import bg from "../assets/images/bg.jpeg";
 import Skills from "../Pages/Skills/Skills";
 import Projects from "../Pages/Projects/Projects";
+import Footer from "../Shared/Footer/Footer";
 const Main = () => {
   const [dark, setDark] = useState(false);
   return (
@@ -27,8 +28,9 @@ const Main = () => {
           <div className="absolute top-0 bg-base-100 bg-opacity-60 w-full">
             <Home></Home>
             <About></About>
-                      <Skills></Skills>
-                      <Projects></Projects>
+            <Skills></Skills>
+            <Projects></Projects>
+            <Footer></Footer>
           </div>
         </div>
       </div>
