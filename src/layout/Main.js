@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import SideNav from "../Shared/SideNav/SideNav";
 
 import { Outlet } from "react-router-dom";
+import Nav from "../Shared/Nav/Nav";
 const Main = () => {
   const [dark, setDark] = useState(false);
   return (
     <div data-theme={dark ? "dark" : "light"}>
-      {/* <Nav></Nav> */}
+      <Nav dark={dark} setDark={setDark}></Nav>
       <div className="lg:flex relative">
         <div className="w-1/5 lg:block hidden">
           <div className="fixed top-0">
