@@ -12,7 +12,7 @@ const About = () => {
         </div>
       </div>
       <div className="lg:w-3/5 flex justify-center items-center bg-base-100">
-        <div className="px-7 lg:py-0 py-10" data-aos="fade-left">
+        <div className="px-7 lg:py-0 py-10">
           <p className="text-3xl mb-3 font-bold text-primary text-center">
             About Myself
           </p>

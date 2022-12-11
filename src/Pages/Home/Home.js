@@ -27,7 +27,7 @@ const Home = () => {
             wrapper="div"
             cursor={true}
             repeat={Infinity}
-            className="lg:text-6xl md:text-3xl text-primary font-bold text-center"
+            className="lg:text-6xl text-3xl text-primary font-bold text-center"
           />
           {/* <h1 className="lg:text-6xl md:text-3xl text-primary font-bold text-center">
             Md Abir Hasan
