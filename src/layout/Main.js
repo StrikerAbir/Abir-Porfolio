@@ -24,14 +24,14 @@ const Main = () => {
 
         <div className="w-4/5 relative">
           <div className="fixed">
-            <img className="w-full" src={bg} alt="" />
+            <img className="xl:w-[1152px] h-screen" src={bg} alt="" />
           </div>
           <div className="absolute top-0 bg-base-100 bg-opacity-60 w-full">
             <Home></Home>
             <About></About>
             <Skills></Skills>
-                      <Projects></Projects>
-                      <ContactMe></ContactMe>
+            <Projects></Projects>
+            <ContactMe></ContactMe>
             <Footer></Footer>
           </div>
         </div>

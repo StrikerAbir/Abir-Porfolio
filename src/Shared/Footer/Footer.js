@@ -4,7 +4,7 @@ import footer from '../../assets/images/footer.gif'
 const Footer = () => {
     return (
       <div className="relative mt-20">
-        <img src={footer} alt="" />
+        <img className='w-full' src={footer} alt="" />
 
         <div className="absolute bottom-0">
           <div className="ml-9 mb-10 text-black">
