@@ -3,7 +3,7 @@ import { FaCopyright, FaFacebookSquare, FaGithubSquare, FaLinkedin } from 'react
 import footer from '../../assets/images/footer.gif'
 const Footer = () => {
     return (
-      <div className="relative">
+      <div className="relative mt-20">
         <img src={footer} alt="" />
 
         <div className="absolute bottom-0">
@@ -33,7 +33,7 @@ const Footer = () => {
             </ul>
           <div className="px-2 flex items-center justify-center">
             <FaCopyright></FaCopyright>
-            <p className="ml-2">Copyright 2022 AbirHasan. </p>
+            <p className="ml-2">Copyright 2022, AbirHasan. </p>
           </div>
           </div>
         </div>

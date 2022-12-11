@@ -7,6 +7,7 @@ import bg from "../assets/images/bg.jpeg";
 import Skills from "../Pages/Skills/Skills";
 import Projects from "../Pages/Projects/Projects";
 import Footer from "../Shared/Footer/Footer";
+import ContactMe from "../Pages/ContactMe/ContactMe";
 const Main = () => {
   const [dark, setDark] = useState(false);
   return (
@@ -29,7 +30,8 @@ const Main = () => {
             <Home></Home>
             <About></About>
             <Skills></Skills>
-            <Projects></Projects>
+                      <Projects></Projects>
+                      <ContactMe></ContactMe>
             <Footer></Footer>
           </div>
         </div>
