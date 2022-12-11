@@ -1,7 +1,7 @@
 
 import { Toaster } from 'react-hot-toast';
 import { RouterProvider } from 'react-router-dom';
-import Main from './layout/Main';
+
 import { router } from './routes/routs';
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles

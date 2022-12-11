@@ -1,37 +1,18 @@
-import React from "react";
-import sbFurniture from "../../assets/images/sbfurniturefull.png";
-import sbfurniture from "../../assets/images/sbfurniture.png";
-import tDrawing from "../../assets/images/tdeaingfull.png";
-import tdrawing from "../../assets/images/tdrawing.png";
-import tCourse from "../../assets/images/tcoursefull.png";
-import tcourse from "../../assets/images/tcourse.png";
+import React, { useEffect, useState } from "react";
+
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
 const Projects = () => {
-  const data = [
-    {
-      photo: sbfurniture,
-      full: sbFurniture,
-      name: "SB Furniture",
-      livesite: "https://sb-furniture.web.app/",
-      git: "https://github.com/StrikerAbir/SB_Furniture",
-    },
-    {
-      photo: tdrawing,
-      full: tDrawing,
-      name: "T-Drawing",
-      livesite: "https://t-service63.web.app/",
-      git: "https://github.com/StrikerAbir/T-Drawing",
-    },
-    {
-      photo: tcourse,
-      full: tCourse,
-      name: "TCourse",
-      livesite: "https://t-course.web.app/",
-      git: "https://github.com/StrikerAbir/TCourse",
-    },
-  ];
+  const [data, setData] = useState([]);
+
+  const [close, setClose] = useState(true);
+  useEffect(() => {
+    fetch("http://localhost:1000/allProjects")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
     <div className="" id="Projects">
       <div className="h-full flex justify-center items-center">
@@ -39,6 +20,7 @@ const Projects = () => {
           <p className="text-3xl mb-10 font-bold text-primary text-center">
             MY PROJECTS
           </p>
+           <p className="btn btn-primary mb-5" onClick={()=>setClose(!close)}>View All Details</p>
 
           <div className="grid grid-cols-2 gap-2">
             {data.map((project) => {
@@ -50,7 +32,11 @@ const Projects = () => {
                   >
                     <PhotoProvider>
                       <PhotoView src={project.full}>
-                        <img src={project.photo} alt="" />
+                        <img
+                          className="cursor-pointer"
+                          src={project.photo}
+                          alt=""
+                        />
                       </PhotoView>
                     </PhotoProvider>
                     <div className="card-body bg-base-100 bg-opacity-60">
@@ -76,6 +62,20 @@ const Projects = () => {
                           </a>
                         </div>
                       </div>
+                      {close === false && (
+                        <div>
+                          <h2 className="font-bold text-primary">
+                            Description:
+                          </h2>
+                          <p>{project.description}</p>
+                          <h2 className="font-bold text-primary">Features:</h2>
+                          <p>{project.features}</p>
+                          <h2 className="font-bold text-primary">
+                            Technologies:
+                          </h2>
+                          <p>{project.technologies}</p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </>
