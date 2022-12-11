@@ -8,6 +8,8 @@ import Skills from "../Pages/Skills/Skills";
 import Projects from "../Pages/Projects/Projects";
 import Footer from "../Shared/Footer/Footer";
 import ContactMe from "../Pages/ContactMe/ContactMe";
+import RightSide from "../Pages/RightSide/RightSide";
+import { Outlet } from "react-router-dom";
 const Main = () => {
   const [dark, setDark] = useState(false);
   return (
@@ -23,17 +25,7 @@ const Main = () => {
         </div>
 
         <div className="w-4/5 relative">
-          <div className="fixed">
-            <img className="xl:w-[1152px] h-screen" src={bg} alt="" />
-          </div>
-          <div className="absolute top-0 bg-base-100 bg-opacity-60 w-full">
-            <Home></Home>
-            <About></About>
-            <Skills></Skills>
-            <Projects></Projects>
-            <ContactMe></ContactMe>
-            <Footer></Footer>
-          </div>
+          <Outlet></Outlet>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import tMark from "../../assets/images/Tmark.gif";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const SideNav = ({ dark, setDark }) => {
   return (
     <div className="bg-base-100 h-screen">
@@ -11,6 +12,7 @@ const SideNav = ({ dark, setDark }) => {
         </li> 
         <li className="px-5 py-3 text-left font-bold border-b border-primary hover:text-secondary">
           <a href="#About">About</a>
+          {/* <Link to='/about'>about</Link> */}
         </li>
         <li className="px-5 py-3 text-left font-bold border-b border-primary hover:text-secondary">
           <a href="#Skills">Skills</a>
