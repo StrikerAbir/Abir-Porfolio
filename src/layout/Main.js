@@ -8,8 +8,8 @@ const Main = () => {
   return (
     <div data-theme={dark ? "dark" : "light"}>
       {/* <Nav></Nav> */}
-      <div className="flex relative">
-        <div className="w-1/5">
+      <div className="lg:flex relative">
+        <div className="w-1/5 lg:block hidden">
           <div className="fixed top-0">
             <div className="border-0 border-r-4 border-primary h-screen">
               <SideNav setDark={setDark} dark={dark}></SideNav>
@@ -17,7 +17,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="w-4/5 relative">
+        <div className="lg:w-4/5 relative">
           <Outlet></Outlet>
         </div>
       </div>

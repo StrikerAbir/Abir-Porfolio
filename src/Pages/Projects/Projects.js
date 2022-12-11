@@ -8,7 +8,7 @@ const Projects = () => {
 
   const [close, setClose] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:1000/allProjects")
+    fetch("https://portfolio-server-side-sandy.vercel.app/allProjects")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
@@ -16,13 +16,13 @@ const Projects = () => {
   return (
     <div className="" id="Projects">
       <div className="h-full flex justify-center items-center">
-        <div className="w-full py-20 px-5">
+        <div className="w-full py-20 lg:px-5">
           <p className="text-3xl mb-10 font-bold text-primary text-center">
             MY PROJECTS
           </p>
            <p className="btn btn-primary mb-5" onClick={()=>setClose(!close)}>View All Details</p>
 
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid lg:grid-cols-2 gap-2">
             {data.map((project) => {
               return (
                 <>
