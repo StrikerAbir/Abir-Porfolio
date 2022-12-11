@@ -28,7 +28,7 @@ const ContactMe = () => {
     return (
       <div className="h-screen mt-20" id="Contact">
         <div className="h-full w-full flex justify-center items-center">
-          <div className="w-1/2 bg-base-100 bg-opacity-70 px-20 py-20 rounded-xl">
+          <div className="lg:w-1/2 w-full bg-base-100 bg-opacity-70 lg:px-20 px-10 py-20 rounded-xl">
             <div>
               <p className="text-3xl mb-5 font-bold text-primary text-center">
                 CONTACT ME
